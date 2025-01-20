@@ -1,0 +1,99 @@
+.custom-text {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.custom-text:hover { 
+    text-decoration: underline;
+}
+
+.jumbotron{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typing-container {
+    display: block;
+    align-items: center;
+}
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+
+.typing-issei {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    animation: typing 2s steps(20, end), step-end infinite;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.typing-portfolio {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    animation: typing 2s steps(20, end) 2.5s, step-end infinite 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@media (min-width: 768px) {
+    .typing-issei {
+        font-size: 4rem;
+    }
+    .typing-portfolio {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .typing-issei {
+        font-size: 6rem;
+    }
+    .typing-portfolio {
+        font-size: 3rem;
+    }
+}
+
+.card-image-top {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-projects {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projects:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hover-effect {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}

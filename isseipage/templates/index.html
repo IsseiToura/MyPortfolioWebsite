@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<div class="jumbotron jumbotron-fluid card card-image" style="background-image: url({{url_for('static', filename='images/background.jpg')}});">
+    <div class="text-dark text-center d-flex align-items-center justify-content-center text-container">
+        <div>
+            <h1 class="typing-container fs-1 fs-md-2 fs-lg-4">
+                <span class="typing-effect typing-issei">ISSEI TOURA</span>
+            </h1>
+            <p class="typing-container">
+                <span class="typing-effect typing-portfolio">ENGINEER PORTFOLIO.</span>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<section class="container-fluid py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="font-weight-bold" id="profile_anchor">PROFILE</h2>
+                <p class="lead">Hi, I'm Issei Toura - a passionate software developer originally from Japan and now basd in Australia.
+                    <br>Currently pursuing my Master's in computer science at QUT, and I'm skilled in C#, Python, TypeScript, and React.
+                    <br>Welcome to my portfolio - enjoy exploring my works!
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center mb-4">
+                <img src="{{url_for('static', filename='images/profile.jpg')}}" class="img-fluid rounded-circle shadow-lg w-50" alt="Profile Picture">
+            </div>
+            <div class="col-12 col-lg-8">
+                <h3>Education</h3>
+                <p class="text-muted">
+                    <strong>Queensland University of Technology (QUT)</strong><br>
+                    Master of Computer Science (02/2024 - 12/2025(present))
+                </p>
+                <p class="text-muted">
+                    <strong>The university of Tokyo</strong><br>
+                    Bachelor of Psychology (04/2015 - 03/2019)
+                </p>
+
+                <h3>Work Experience</h3>
+                <p class="text-muted">
+                    <strong>Recruit Holdings Co., Ltd.</strong><br>
+                    Sales Leader (04/2022 - 09/2023)<br>
+                    - Worked as a sales leader for inside sales of cashless payment terminals.<br>
+                    Enterprise Sales Specialist (04/2019 - 03/2022)<br>
+                    - Served as a major sales representative for mid-career recruitment advertising.<br> 
+                </p>
+
+                <h3>Hobby</h3>
+                <p class="text-muted">
+                    <strong>Lacrosse Enthusiast</strong><br>
+                    I participated in an inter-state lacrosse tournament and won as a Queenslander.
+                    <a href="https://www.instagram.com/p/DBpzB6LTq16/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">(Details)</a>
+                </p>
+                <p class="text-muted">
+                    <strong>Horse Racing Lover</strong><br>
+                    I have loved horse racing as a sport (not a gamble) since 3 years old.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid py-5" style="background-color: #e9ecef;">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2 class="font-weight-bold" id="skills_anchor">SKILLS</h2>
+                <p class="lead">Continuously improving...</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for skill in skills %}
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-image-top" src="{{url_for('static', filename='images/' + skill.image)}}" alt="Card Image">
+                            <h4 class="card-title">{{skill.name}}</h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+<section class="container-fluid py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2 class="font-weight-bold" id="projects_anchor">PROJECTS</h2>
+                <p class="lead">These are my projects. Click to learn more.</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for project in projects %}
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="{{ url_for('main.show_project_details', project_id=project.id) }}" class="text-decoration-none text-dark">
+                        <div class="card card-projects d-flex flex-row mb-3">
+                            <img class="card-image-left" src="{{url_for('static', filename='images/' + project.image)}}" alt="Card Image" style="width: 40%; object-fit: contain;">
+                            <div class="card-body d-flex flex-column justify-content-between" style="width: 60%;">
+                                <h4 class="card-title">{{ project.title }}</h4>
+                                <p class="card-description">{{ project.environment.replace('\n', '<br>')|safe }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+<section class="container-fluid py-5" style="background-color: #e9ecef;">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2 class="font-weight-bold" id="skills_anchor">CONTACT</h2>
+                <p class="lead">Feel free to get in touch!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                <div class="mx-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.linkedin.com/in/issei-toura-1502851a1/" target="_blank" rel="noopener noreferrer">
+                            <img class="card-image-top hover-effect" src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkedIn" style="width: 100px; height: auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="mx-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://github.com/IsseiToura" target="_blank" rel="noopener noreferrer">
+                            <img class="card-image-top hover-effect" src="{{url_for('static', filename='images/github.png')}}" alt="GitHub" style="width: 100px; height: auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="mx-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/issei.t0429/" target="_blank" rel="noopener noreferrer">
+                            <img class="card-image-top hover-effect" src="{{url_for('static', filename='images/instagram.png')}}" alt="Instagram" style="width: 100px; height: auto;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

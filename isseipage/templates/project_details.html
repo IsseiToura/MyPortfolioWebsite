@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<section class="container-fluid py-3" style="background-color: #e9ecef;">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2 class="font-weight-bold mt-3 mb-3">{{ project.title }}</h2>
+                <img src="{{ url_for('static', filename='images/' + project.image) }}" alt="Project Image" class="img-fluid" style="width: 300px; height: 200px; object-fit: cover;">
+                <div class="mt-3">
+                    <a href="{{ project.url }}" class="btn btn-outline-dark" target="_blank">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid py-3" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <h2 class="text-center font-weight-bold mt-3 mb-3">Description</h2>
+                <p class="text-start">{{ project.description.replace('\n', '<br>')|safe }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid py-3" style="background-color: #e9ecef;">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <h2 class="text-center font-weight-bold mt-3 mb-3">Tech Stack</h2>
+                <p class="text-center">{{ project.environment.replace('\n', '<br>')|safe }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
