@@ -19,5 +19,5 @@ def get_projects():
          "description": "1. Created a personal portfolio website to showcase my work as a software developer, using Python Flask." \
                         "\n\n2. Utilized Bootstrap to ensure responsive design, making the website compatible with various screen sizes, including PCs, tablets, and smartphones.",
          "environment": " - Language: Python, HTML, CSS\n - Others: Python Flask, BootStrap",
-         "url": "https://github.com/IsseiToura/AUDJPNNotification"}
+         "url": "https://github.com/IsseiToura/MyPortfolioWebsite"}
     ]

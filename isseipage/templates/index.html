@@ -48,7 +48,7 @@
                     <strong>Recruit Holdings Co., Ltd.</strong><br>
                     Sales Leader (04/2022 - 09/2023)<br>
                     - Worked as a sales leader for inside sales of cashless payment terminals.<br>
-                    Enterprise Sales Specialist (04/2019 - 03/2022)<br>
+                    Enterprise Sales (04/2019 - 03/2022)<br>
                     - Served as a major sales representative for mid-career recruitment advertising.<br> 
                 </p>
 
@@ -77,10 +77,10 @@
         </div>
         <div class="row">
             {% for skill in skills %}
-                <div class="d-flex justify-content-center align-items-center w-100 h-100 col-6 col-sm-6 col-md-6 col-lg-3">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="card">
                         <div class="card-body">
-                            <img class="card-image-top" src="{{url_for('static', filename='images/' + skill.image)}}" alt="Card Image">
+                            <img class="card-image-top w-60" src="{{url_for('static', filename='images/' + skill.image)}}" alt="Card Image">
                             <h4 class="card-title">{{skill.name}}</h4>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
         <div class="row text-center mb-3">
             <div class="col">
                 <h2 class="font-weight-bold" id="projects_anchor">PROJECTS</h2>
-                <p class="lead">These are my projects. Click to learn more.</p>
+                <p class="lead">These are my projects.<br>Click to learn more.</p>
             </div>
         </div>
         <div class="row">
