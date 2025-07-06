@@ -14,6 +14,3 @@ venv/
 .env
 .env.local
 .env.production
-
-# Config file with sensitive data
-config.py
