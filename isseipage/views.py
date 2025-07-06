@@ -19,3 +19,7 @@ def show_project_details(project_id):
         return render_template('error.htmel'), 404
 
     return render_template('project_details.html', project=project)
+
+@main_bp.route('/issei_gpt')
+def issei_gpt():
+    return render_template('issei_gpt.html')

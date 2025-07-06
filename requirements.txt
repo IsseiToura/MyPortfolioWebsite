@@ -1,2 +1,50 @@
-Flask==2.3.2
-gunicorn==20.1.0
+# Web Framework
+Flask==3.0.3
+Werkzeug==3.0.4
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+
+# LangChain and AI
+langchain==0.3.4
+langchain-openai==0.2.0
+langchain-community==0.3.0
+langchain-core==0.3.12
+langchain-chroma==0.1.4
+langgraph==0.2.23
+langgraph-checkpoint==1.0.10
+
+# OpenAI and Vector Database
+openai==1.47.0
+chromadb==0.5.7
+
+# Natural Language Processing
+nltk==3.8.1
+
+# Search API
+serpapi==0.1.5
+google_search_results==2.4.2
+
+# Document Processing
+unstructured[md]==0.15.0
+markdown==3.7
+
+# Environment and Deployment
+python-dotenv==1.0.1
+gunicorn==21.2.0
+
+# HTTP and Networking
+requests==2.32.3
+urllib3==2.2.3
+certifi==2024.8.30
+charset-normalizer==3.3.2
+idna==3.10
+
+# Data Processing
+pydantic==2.9.2
+pydantic-settings==2.5.2
+pydantic_core==2.23.4
+
+# Utilities
+typing_extensions==4.12.2
+packaging==24.1
+six==1.16.0

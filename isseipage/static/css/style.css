@@ -142,3 +142,59 @@
     font-size: 2rem;
   }
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #222;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+  font-size: 1rem;
+}
+
+.chat-bubble-user {
+  background: #e3f0ff; /* light blue */
+  color: #0d223a;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.chat-bubble-ai {
+  background: #fff; /* white background */
+  color: #222; /* dark black */
+  border-bottom-left-radius: 0.2rem;
+}
+
+.chat-bubble-error {
+  background: #ffe6e6; /* light red background */
+  color: #d32f2f; /* red text */
+  border: 1px solid #ffcdd2; /* red border */
+  border-bottom-left-radius: 0.2rem;
+}
+
+/* issei_gpt.html */
+#questionForm {
+  gap: 1rem !important;
+}
+#questionForm .d-flex.gap-2 {
+  gap: 0.5rem !important;
+}
+#questionForm input[type="text"] {
+  min-width: 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-right: 0;
+}
+#questionForm button {
+  min-width: 110px;
+}
