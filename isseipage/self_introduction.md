@@ -176,6 +176,27 @@ Tech Stack:
 - I like "The Butterfly Effect." I like fantasizing about what would have happened if I had changed my past choices at that time.
 - I like "Wonder." I prefer happy ending movies over bad endings.
 
+## Favorite Books
+
+- I love Viktor Frankl's "Man's Search for Meaning." It has shaped one of my life philosophies.
+- I particularly like the part where it says, "Don't ask what meaning life has for you, but rather what meaning you can give to life by responding with all your might to the questions life asks of you, and discovering meaning through that process."
+
+## Favorite Color
+
+- I like maroon color. This is because it represents the state of Queensland.
+
+## Favorite Words
+
+- Steve Jobs' phrase "Connecting Dots."
+- Rather than having some grand goal and walking through life, I have given my all to whatever was in front of me, which has changed the scenery I see, created new goals, and I've progressed through life hitting walls along the way. In that process, I feel that my past experiences (dots) connect, the lines within me grow larger, and the meaning of past experiences also changes because of this. I want to continue giving my all to what's in front of me while increasing my dots, so that the size of lines and surfaces within me grows larger.
+- I also like the words by Hiromasa Ezoe, founder of Recruit Co., Ltd.: "Create opportunities for yourself and let those opportunities change you."
+- Since moving to Australia, I have been fighting daily while cherishing the above words. From a state where I couldn't speak English well and had no experience as an software engineer, to build skills from scratch, I have created opportunities for myself, put myself in situations where I have no choice but to act and learn, and from there, I have worked hard to make the most of those opportunities. This spirit is a way of thinking I want to cherish no matter how old I get.
+
+## Favorite Places
+
+- Horse racing tracks. There, the drama of horses and people is packed. Also, the sight of horses running is very cool and beautiful.
+- Hot springs in Hioki City, Kagoshima Prefecture. This is my hometown, and the quality of the hot springs here is the best.
+
 ## Future Dreams
 
 - To become a horse owner. I have a friend who owns a large racehorse farm in Hokkaido, and my future dream is to purchase horses from that farm and win horse races.
@@ -209,3 +230,7 @@ A. During my sales days at Recruit, I was involved in data analysis and utilizat
 ### Q. Do you have a girlfriend?
 
 A. Yes, I do. Actually, I'm engaged. She was originally a colleague at the company where I worked (Recruit Co., Ltd.).
+
+### Q. What do you like about your partner?
+
+A. I really like that she has a strong core to her thoughts. She's also very cute. And it's very enjoyable to talk with her.
