@@ -35,7 +35,16 @@ def get_projects():
                         "\n\n3. Auto-generated relationship diagrams, and structured data export to Excel for further analysis." \
                         "\n\n4. This was a collaborative project, and my role was project manager and developer.",
          "environment": " - Language: Python and TypeScript\n - Others: Python Flask, PDFPlumber, React",
-         "url": "https://www.linkedin.com/posts/issei-toura-1502851a1_as-part-of-my-university-curriculum-i-had-activity-7339480483979776002-QgEZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC80UowB-h4CtQwXDHw9lxwFfPUT2oHqn_Y"}
+         "url": "https://www.linkedin.com/posts/issei-toura-1502851a1_as-part-of-my-university-curriculum-i-had-activity-7339480483979776002-QgEZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC80UowB-h4CtQwXDHw9lxwFfPUT2oHqn_Y"},
+         {"id": 6, "image": "video-transcriver-ai.png", "title": "Video Transcriver AI",
+         "description": "1. Creates transcripts from long videos (audio) and automatically generates summaries of the content." \
+                        "\n\n2. Built with event-driven architecture to seamlessly process the entire workflow:" \
+                        "\n   - User uploads video → stored in S3" \
+                        "\n   - Lambda function sends message to SQS → triggers automatic transcription and summarization" \
+                        "\n   - ECS scales out when queue grows, scales in when only one message remains" \
+                        "\n\n3. Developed as a cloud-native application using AWS. Main AWS services used: CloudFront, Lambda, ECS, SQS, DynamoDB, and S3.",
+         "environment": " - Language: Python and TypeScript\n - Others: AWS (ECS, CloudFront, Lambda, DynamoDB, etc.), OpenAI API",
+         "url": "https://www.linkedin.com/posts/issei-toura-1502851a1_cloudcomputing-aws-serverless-activity-7395966301892112384-_Kvp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC80UowB-h4CtQwXDHw9lxwFfPUT2oHqn_Y"}
     ]
     
     # IDを逆順（降順）でソートして返す

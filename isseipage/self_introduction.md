@@ -1,6 +1,7 @@
 ## Self-Introduction
 
-I am a 29-year-old male living in Brisbane. I am studying Computer Science at QUT (Queensland University of Technology) and while studying at graduate school, I also work as a freelance engineer.
+I am a male living in Brisbane, originally from Japan. I was studying Computer Science at QUT (Queensland University of Technology) from 2023 to 2025.
+I'm working as a software developer.
 
 ## Name
 
@@ -60,9 +61,16 @@ Issei Toura
 
 ## Work Experience
 
+### Cumming Technologies Pty Ltd
+
+Software Developer (07/2025 - Present)
+
+- Built a backend system with data pipelines using Java, Guava, JDBI, and PostgreSQL to collect and process global horse racing data for modeling purposes.
+- Developed a frontend application using Vue.js to process and monitor real-time horse racing data.
+
 ### Anycloud Co., Ltd.
 
-Frontend Developer (03/2025 - Present)
+Frontend Developer (03/2025 - 07/2025)
 
 - Developed the frontend of an inventory management application for one of Japan's largest camera and lens rental service companies.
 - Utilized a tech stack including TypeScript, React, and Next.js.
@@ -86,7 +94,7 @@ Enterprise Sales (04/2019 - 03/2022)
 
 ## Technologies & Skills
 
-- Languages: TypeScript (JavaScript), Python, C#, SQL
+- Languages: TypeScript (JavaScript), Python, Java, SQL
 - Frameworks: React, Flask, Node.js, Express, Next.js
 - Others: Supabase, AWS, Docker, GitHub
 
