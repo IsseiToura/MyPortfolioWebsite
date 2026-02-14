@@ -21,11 +21,27 @@
   <div class="container" style="max-width: 1200px;">
     <div class="row text-center mb-5 fade-in">
       <div class="col">
-        <h2 class="font-weight-bold mb-5" id="profile_anchor">
+        <h2 class="font-weight-bold mb-2" id="profile_anchor">
           <i class="fas fa-user-circle me-3" style="color: var(--primary-blue); font-size: 0.9em;"></i>
           PROFILE
         </h2>
-        <p class="lead mb-5" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 d-flex flex-column align-items-center text-center mb-4 fade-in">
+        <div class="profile-image-wrapper">
+          <img
+            src="{{url_for('static', filename='images/profile.jpg')}}"
+            class="img-fluid rounded-circle w-100"
+            alt="Profile Picture"
+          />
+          <a href="{{url_for('main.issei_gpt')}}" class="profile-image-caption">
+            <i class="fas fa-comment-dots"></i>
+            Ask me more details
+          </a>
+        </div>
+        <p class="lead mt-2 mb-0">
           Hi, I'm Issei - a passionate software developer from
           Japan and now based in Australia. <br />I'm skilled in Java, Python,
           and TypeScript. <br />Welcome to my portfolio - enjoy exploring my
@@ -34,25 +50,9 @@
       </div>
     </div>
 
+    <!-- Work Experience, Education, Hobbies -->
     <div class="row">
-      <div
-        class="col-12 col-lg-4 d-flex justify-content-center align-items-center mb-4 fade-in-left"
-      >
-        <div class="profile-image-wrapper">
-          <a href="{{url_for('main.issei_gpt')}}" class="profile-image-link">
-            <img
-              src="{{url_for('static', filename='images/profile.jpg')}}"
-              class="img-fluid rounded-circle w-100"
-              alt="Profile Picture"
-            />
-            <div class="profile-image-caption">
-              <i class="fas fa-comment-dots"></i>
-              Ask me more details
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 col-lg-8 fade-in-right">
+      <div class="col-12">
         <!-- Work Experience Section -->
         <div class="mb-4">
           <h3 class="border-bottom pb-3 mb-4" style="color: var(--primary-navy); border-color: var(--primary-blue) !important; ">

@@ -669,23 +669,8 @@ p {
   text-align: center;
 }
 
-.profile-image-link {
-  display: block;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.profile-image-link:hover {
-  transform: scale(1.05);
-}
-
-.profile-image-link img {
+.profile-image-wrapper img {
   box-shadow: var(--shadow-md);
-  transition: box-shadow 0.3s ease;
-}
-
-.profile-image-link:hover img {
-  box-shadow: var(--shadow-lg);
 }
 
 .profile-image-caption {
@@ -701,7 +686,11 @@ p {
   transition: color 0.3s ease;
 }
 
-.profile-image-link:hover .profile-image-caption {
+a.profile-image-caption {
+  text-decoration: none;
+}
+
+a.profile-image-caption:hover {
   color: var(--accent-teal);
 }
 
