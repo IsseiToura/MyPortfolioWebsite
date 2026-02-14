@@ -1,6 +1,11 @@
-import { ChatManager } from "./chatManager.js";
-import { UIManager } from "./uiManager.js";
-import { ApiService } from "./apiService.js";
+/**
+ * main.js - IsseiGPT entry point
+ * Handles the main chat interface logic and coordinates between UI, API, and state management
+ */
+
+import { ChatManager } from "./chat-manager.js";
+import { UIManager } from "./ui-manager.js";
+import { ApiService } from "./api-service.js";
 
 const chatManager = new ChatManager();
 

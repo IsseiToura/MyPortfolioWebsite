@@ -1,6 +1,7 @@
-from flask import Blueprint, render_template, url_for
+from flask import Blueprint, render_template
 from isseipage.data.skills import get_skills
 from isseipage.data.projects import get_projects
+from isseipage.data.work_experiences import get_work_experiences, get_education
 
 main_bp = Blueprint('main', __name__)
 
@@ -8,7 +9,9 @@ main_bp = Blueprint('main', __name__)
 def index():
     skills = get_skills()
     projects = get_projects()
-    return render_template('index.html', skills=skills, projects=projects)
+    work_experiences = get_work_experiences()
+    education = get_education()
+    return render_template('index.html', skills=skills, projects=projects, work_experiences=work_experiences, education=education)
 
 @main_bp.route('/projects/<int:project_id>')
 def show_project_details(project_id):

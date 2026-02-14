@@ -1,49 +1,89 @@
 {% extends 'base.html' %} {% block main %}
-<section class="container-fluid py-3" style="background-color: #e9ecef">
-  <div class="container">
-    <div class="row text-center mb-3">
+<!-- Project Header Section -->
+<section class="container-fluid py-6" style="background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%)">
+  <div class="container" style="max-width: 1200px;">
+    <div class="row text-center mb-5 fade-in">
       <div class="col">
-        <h2 class="font-weight-bold mt-3 mb-3">{{ project.title }}</h2>
+        <h2 class="font-weight-bold mb-5">
+          <i class="fas fa-folder-open me-3" style="color: var(--primary-blue); font-size: 0.9em;"></i>
+          {{ project.title }}
+        </h2>
         <img
           src="{{ url_for('static', filename='images/' + project.image) }}"
           alt="Project Image"
-          class="img-fluid"
-          style="width: 300px; height: 200px; object-fit: cover"
+          class="img-fluid mx-auto d-block shadow-lg"
+          style="max-width: 600px; width: 100%; height: auto; object-fit: cover; border-radius: 16px;"
         />
-        <div class="mt-3">
+        <div class="mt-4">
           <a
             href="{{ project.url }}"
-            class="btn btn-outline-dark"
+            class="btn btn-lg btn-outline-dark px-5 py-2"
             target="_blank"
-            >Details</a
+            style="border-radius: 30px; border: 2px solid var(--primary-navy);"
           >
+            <i class="fas fa-external-link-alt me-2"></i>View Details
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="container-fluid py-3" style="background-color: #f8f9fa">
-  <div class="container">
-    <div class="row mb-3">
+<!-- Description Section -->
+<section class="container-fluid py-6 section-wave" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%)">
+  <div class="container" style="max-width: 1200px;">
+    <div class="row text-center mb-5 fade-in">
       <div class="col">
-        <h2 class="text-center font-weight-bold mt-3 mb-3">Description</h2>
-        <p class="text-start">
-          {{ project.description.replace('\n', '<br />')|safe }}
-        </p>
+        <h2 class="font-weight-bold mb-5">
+          <i class="fas fa-info-circle me-3" style="color: var(--primary-blue); font-size: 0.9em;"></i>
+          DESCRIPTION
+        </h2>
       </div>
+    </div>
+    <div style="max-width: 900px;" class="mx-auto">
+      <ul style="line-height: 2; font-size: 1.05rem;">
+        {% for feature in project.features %}
+          {% if feature is mapping %}
+            <li class="mb-3">
+              {{ feature.text }}
+              <ul style="margin-top: 0.75rem; margin-bottom: 0.75rem; list-style-type: circle; padding-left: 2rem;">
+                {% for subitem in feature.subitems %}
+                  <li class="mb-2" style="font-size: 0.95rem;">{{ subitem }}</li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="mb-3">{{ feature }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="container-fluid py-3" style="background-color: #e9ecef">
-  <div class="container">
-    <div class="row mb-3">
+<!-- Tech Stack Section -->
+<section class="container-fluid py-6 section-wave" style="background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%)">
+  <div class="container" style="max-width: 1200px;">
+    <div class="row text-center mb-5 fade-in">
       <div class="col">
-        <h2 class="text-center font-weight-bold mt-3 mb-3">Tech Stack</h2>
-        <p class="text-center">
-          {{ project.environment.replace('\n', '<br />')|safe }}
-        </p>
+        <h2 class="font-weight-bold mb-5">
+          <i class="fas fa-code me-3" style="color: var(--primary-blue); font-size: 0.9em;"></i>
+          TECH STACK
+        </h2>
+      </div>
+    </div>
+    <div style="max-width: 800px;" class="mx-auto text-center">
+      <div class="mb-4">
+        <h5 style="color: var(--primary-navy); font-weight: 600;">
+          <i class="fas fa-laptop-code me-2" style="color: var(--primary-blue);"></i>Language
+        </h5>
+        <p class="lead" style="font-size: 1.1rem;">{{ project.tech_stack.language }}</p>
+      </div>
+      <div class="mb-4">
+        <h5 style="color: var(--primary-navy); font-weight: 600;">
+          <i class="fas fa-cogs me-2" style="color: var(--primary-blue);"></i>Others
+        </h5>
+        <p class="lead" style="font-size: 1.1rem;">{{ project.tech_stack.others }}</p>
       </div>
     </div>
   </div>

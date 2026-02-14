@@ -1,3 +1,7 @@
+/**
+ * api-service.js - Handles API communication with the backend
+ */
+
 export class ApiService {
   static async askQuestion(question) {
     const response = await fetch("/api/issei_gpt/ask", {

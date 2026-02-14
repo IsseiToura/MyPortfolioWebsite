@@ -1,3 +1,7 @@
+/**
+ * ui-manager.js - Handles UI updates for the chat interface
+ */
+
 export class UIManager {
   static addChatBubble(
     text,

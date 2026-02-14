@@ -1,3 +1,7 @@
+/**
+ * chat-manager.js - Manages chat state and scroll behavior
+ */
+
 export class ChatManager {
   constructor() {
     this.lastQuestion = "";
