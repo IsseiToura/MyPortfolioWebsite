@@ -315,6 +315,7 @@ p {
   height: 80vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,8 +331,14 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.3) 0%, rgba(59, 130, 246, 0.2) 100%);
+  background: rgba(248, 250, 252, 0.35);
   pointer-events: none;
+  z-index: 0;
+}
+
+.jumbotron > div {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes typing {
@@ -382,6 +389,23 @@ p {
   
   .jumbotron {
     margin-top: 60px;
+  }
+  
+  .jumbotron > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .typing-issei {
+    font-size: 1.75rem;
+    letter-spacing: 4px;
+  }
+  
+  .typing-portfolio {
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
   
   .custom-text {
@@ -459,6 +483,15 @@ p {
   background: var(--white);
   padding: 1.5rem;
   text-align: center;
+}
+
+.jumbotron.card {
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: none;
+  padding: 0;
 }
 
 .card .card-body {
