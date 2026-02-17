@@ -49,21 +49,29 @@ Issei Toura
 
 ### Graduate School Era
 
-- Currently, I am studying Computer Science at QUT, a graduate school in Brisbane, Australia.
-- I haven't graduated yet, but even at this point, I think this choice to come to Brisbane is one of the best decisions I've made. Thanks to this choice, I think my values have broadened considerably, and above all, I feel that studying technology is very enjoyable.
-- During graduate school, I started working as a freelance software developer. Balancing work and graduate school studies is challenging, but I also feel a sense of fulfillment.
+- I studied Computer Science at QUT, a graduate school in Brisbane, Australia, and graduated in December 2025.
+- I think the choice to come to Brisbane was one of the best decisions I've made. Thanks to this experience, my values have broadened considerably, and above all, I found that studying technology is very enjoyable.
+- During graduate school, I started working as a freelance software developer. Balancing work and graduate school studies was challenging, but I also felt a sense of fulfillment.
 
 ### Future Outlook
 
-- I plan to graduate from graduate school in December 2025, and after that, I'll receive a 2-year Graduate Visa, so I plan to look for work as an software developer in Australia during that time.
+- I am now working as a software developer in Australia on a 2-year Graduate Visa that I received after graduating.
 - After those 2 years, I want to think about my career again based on how I feel after actually working. However, I don't know when it will be, but in the future, I want to do something as my life work that contributes to strengthening Japan's national power as a Japanese person.
-- Also, my partner is planning to quit her job in Japan and come to Australia from January 2026. From then on, I want to work hard together as a team, never losing our smiles.
+- My partner came to Australia in January 2026, and we are now living together. I want us to keep working hard as a team, never losing our smiles.
 
 ## Work Experience
 
+### Semurg Enterprise Pty Ltd
+
+Software Developer (12/2025 - Present)
+
+- Developed an application that protects confidential information (e.g., PII, API keys) by implementing a secure tokenisation system.
+- Built a translation application leveraging local and open-source LLM models to process multimodal data.
+- Developed a real-time client application using WebSockets and a publish-subscribe architecture.
+
 ### Cumming Technologies Pty Ltd
 
-Software Developer (07/2025 - Present)
+Software Developer (07/2025 - 11/2025)
 
 - Built a backend system with data pipelines using Java, Guava, JDBI, and PostgreSQL to collect and process global horse racing data for modeling purposes.
 - Developed a frontend application using Vue.js to process and monitor real-time horse racing data.
@@ -88,7 +96,7 @@ Enterprise Sales (04/2019 - 03/2022)
 ## Education
 
 - Queensland University of Technology (QUT)
-  Master of Computer Science (02/2024 - Present)
+  Master of Computer Science (02/2024 - 12/2025)
 - The University of Tokyo
   Bachelor of Psychology (04/2015 - 03/2019)
 
@@ -99,6 +107,23 @@ Enterprise Sales (04/2019 - 03/2022)
 - Others: Supabase, AWS, Docker, GitHub
 
 ## Main Projects
+
+### RAG-based CVE Detection System
+
+- Final-semester Research Project thesis that received the Best Research Paper Award in QUT.
+- Focused on optimizing RAG for cybersecurity. When handling incidents, internal and up-to-date information is critical; standalone AI models (e.g., ChatGPT, Gemini) cannot access private or latest sources, which limits their effectiveness.
+- Investigated whether RAG can effectively answer the latest CVEs—high-priority information for cybersecurity response.
+- The system built in this research performed better on recent CVE questions compared to using GPT-4o alone.
+
+Tech Stack: Python, FastAPI, text-embedding-3-small, Chroma DB
+
+### Video Transcriber AI
+
+- Creates transcripts from long videos (audio) and automatically generates summaries of the content.
+- Built with event-driven architecture to seamlessly process the entire workflow: User uploads video → stored in S3; Lambda function sends message to SQS → triggers automatic transcription and summarization; ECS scales out when queue grows, scales in when only one message remains.
+- Developed as a cloud-native application using AWS. Main AWS services used: CloudFront, Lambda, ECS, SQS, DynamoDB, and S3.
+
+Tech Stack: Python, TypeScript, AWS (ECS, CloudFront, Lambda, DynamoDB, etc.), OpenAI API
 
 ### Forensic Data Visualizer (Legal Investigation Support App)
 
@@ -117,6 +142,7 @@ Key Features
 - Cross-document entity matching using keys such as ACNs and full names
 - Auto-generated relationship diagrams
 - Structured data export to Excel for further analysis
+- * This was a collaborative project, and my role was project manager and developer.
 
 Tech Stack
 
@@ -146,6 +172,30 @@ Tech Stack:
 - Frontend: React + Vite
 - Backend: Node.js
 - Others: OpenAI API, Mantine, MongoDB
+
+### Daily Bot for AUD/JPY Rate and English Vocabulary
+
+- Developed a bot that retrieves AUD/JPY exchange rates and English vocabulary words daily from APIs and stores in a database.
+- The bot sends this information to a messaging app automatically once a day.
+- Built a vocabulary learning app that displays a list of vocabulary words stored in a database. Users can also add their own words they want to learn.
+- * This was a collaborative project, and I was responsible for implementing the vocabulary-related features.
+
+Tech Stack: TypeScript, Next.js, OpenAI API, MongoDB, Docker
+
+### Board Game (Gomoku & Noktakto)
+
+- Developed the mechanics for two games: Gomoku and Noktakto.
+- Implemented two game modes: Human vs. Human and Human vs. Computer Player.
+- Designed with object-oriented principles, enabling easy implementation of other one-on-one board games. The project incorporates design patterns such as the Factory Method Pattern and Template Method Pattern.
+
+Tech Stack: C#, .NET
+
+### My Portfolio Website
+
+- Created a personal portfolio website to showcase my work as a software developer, using Python Flask.
+- Utilized Bootstrap to ensure responsive design, making the website compatible with various screen sizes, including PCs, tablets, and smartphones.
+
+Tech Stack: Python, HTML, CSS, Python Flask, Bootstrap
 
 ## Project Experience & Development Style
 

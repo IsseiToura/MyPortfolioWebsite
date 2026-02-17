@@ -105,5 +105,21 @@ projects = [
             'others': 'AWS (ECS, CloudFront, Lambda, DynamoDB, etc.), OpenAI API'
         },
         'url': 'https://www.linkedin.com/posts/issei-toura-1502851a1_cloudcomputing-aws-serverless-activity-7395966301892112384-_Kvp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC80UowB-h4CtQwXDHw9lxwFfPUT2oHqn_Y'
+    },
+    {
+        'id': 7,
+        'image': 'rag-cve.png',
+        'title': 'RAG-based CVE Detection System',
+        'features': [
+            'Final-semester Research Project thesis that received the Best Research Paper Award in QUT.',
+            'Focused on optimizing RAG for cybersecurity. When handling incidents, internal and up-to-date information is critical; standalone AI models (e.g., ChatGPT, Gemini) cannot access private or latest sources, which limits their effectiveness.',
+            'Investigated whether RAG can effectively answer the latest CVEs—high-priority information for cybersecurity response.',
+            'The system built in this research performed better on recent CVE questions compared to using GPT-4o alone.'
+        ],
+        'tech_stack': {
+            'language': 'Python',
+            'others': 'FastAPI, text-embedding-3-small, Chroma DB'
+        },
+        'url': 'https://www.linkedin.com/posts/issei-toura-1502851a1_qut-cybersecurity-rag-activity-7401424699777622016-PRdB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC80UowB-h4CtQwXDHw9lxwFfPUT2oHqn_Y'
     }
 ]
