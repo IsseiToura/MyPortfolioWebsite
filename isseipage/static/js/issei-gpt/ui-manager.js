@@ -26,6 +26,7 @@ export class UIManager {
     }
 
     inner.className = bubbleClass;
+    inner.setAttribute("tabindex", "-1"); /* focusable for accessibility */
     inner.innerHTML = this.convertTextToHtml(text);
 
     if (sender !== "user" && linksData && linksData.length > 0) {
@@ -54,6 +55,7 @@ export class UIManager {
 
     bubble.appendChild(inner);
     chatArea.appendChild(bubble);
+    return inner; /* return content node so caller can focus it */
   }
 
   static setButtonState(button, disabled) {

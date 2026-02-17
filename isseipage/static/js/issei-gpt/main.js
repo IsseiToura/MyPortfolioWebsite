@@ -20,9 +20,16 @@ document
     const submitButton = this.querySelector("button[type='submit']");
 
     try {
-      // UI update
-      UIManager.addChatBubble(question, "user", chatManager.chatArea);
+      const userBubble = UIManager.addChatBubble(
+        question,
+        "user",
+        chatManager.chatArea
+      );
       chatManager.updateLastQuestion(question);
+      if (userBubble) {
+        userBubble.scrollIntoView({ block: "start", behavior: "smooth" });
+        userBubble.focus();
+      }
 
       // disable button
       UIManager.setButtonState(submitButton, true);
@@ -39,9 +46,6 @@ document
         data.links
       );
       chatManager.updateLastAnswer(data.answer || "");
-
-      // scroll
-      chatManager.scrollToBottom();
     } catch (error) {
       const errorMessage = error.message || "Something went wrong.";
       UIManager.addChatBubble(
@@ -53,10 +57,8 @@ document
       );
       console.error("Error:", error);
     } finally {
-      // enable button and reset form
       UIManager.setButtonState(submitButton, false);
       document.getElementById("question").value = "";
-      document.getElementById("question").focus();
     }
   });
 

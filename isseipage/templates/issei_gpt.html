@@ -1,14 +1,14 @@
 {% extends 'base.html' %} {% block main %}
 <section
-  class="container-fluid py-5"
+  class="container-fluid py-5 issei-gpt-section"
   style="background-color: #f8f9fa; min-height: 100vh"
 >
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8">
-        <div class="card-body">
+  <div class="container h-100">
+    <div class="row justify-content-center h-100">
+      <div class="col-12 col-md-10 col-lg-8 d-flex flex-column min-h-0 flex-grow-1">
+        <div class="card-body d-flex flex-column flex-grow-1 min-h-0">
           <h2
-            class="card-title text-center font-weight-bold mb-4"
+            class="card-title text-center font-weight-bold mt-4 mb-4"
             style="color: #000"
           >
             Issei GPT
@@ -40,7 +40,7 @@
             </div>
           </form>
           <!-- chat bubbles -->
-          <div id="chatArea" class="mb-4"></div>
+          <div id="chatArea" class="mb-4 flex-grow-1 min-h-0"></div>
         </div>
       </div>
     </div>

@@ -15,8 +15,8 @@ except Exception as e:
     print(f"Warning: Could not download NLTK data: {e}")
     print("Please install required NLTK data manually or check your internet connection")
 
-main_path = os.path.dirname(os.path.abspath(__file__))
-md_path = os.path.join(os.path.dirname(main_path), "self_introduction.md")
+isseipage_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+md_path = os.path.join(isseipage_root, "data", "self_introduction.md")
 
 # Check if markdown file exists
 if not os.path.exists(md_path):

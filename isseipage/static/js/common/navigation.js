@@ -124,6 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }, observerOptions);
 
   // Observe all animated elements
-  const animatedElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .scale-in, .stagger-item');
+  const animatedElements = document.querySelectorAll('.fade-in, .scale-in, .stagger-item');
   animatedElements.forEach(el => observer.observe(el));
 });
